@@ -1,0 +1,16 @@
+1. Start
+
+2. Prompt the user to enter a number and store it in a variable 'number'.
+
+3. Initialize a variable 'result' to store the result.
+
+4. Check if the number is even:
+    If number modulo 2 equals 0:
+        Set 'result' to the square of the number.
+    Else:
+        Set 'result' to the cube of the number.
+    End If
+
+5. Display the value of 'result'.
+
+6. End

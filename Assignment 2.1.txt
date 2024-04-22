@@ -1,0 +1,21 @@
+Psuedocode for bubble sort algorithm
+
+function bubbleSort(arr: array of integers) -> array of integers
+    n = length of arr
+    for i from 0 to n - 1
+    for j from 0 to n - i - 1
+    if arr[j] > arr[j + 1]
+    swap arr[j] and arr[j + 1]
+    return arr
+
+
+Dry run to demonstrate bubble sort 
+
+the array is [5, 3, 8, 1, 4]:
+
+After the first pass:
+[3, 5, 1, 4, 8]
+[3, 1, 4, 5, 8]
+After the second pass:
+[1, 3, 4, 5, 8]
+The array is now sorted.

@@ -1,0 +1,52 @@
+Function 1: Factorial Calculation
+Description:
+This function calculates the factorial of a given number using recursion.
+
+Pseudocode:
+plaintext
+Copy code
+function factorial(n: integer) -> integer
+    if n equals 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+Explanation:
+The function takes an integer n as input and recursively calculates the factorial.
+
+If n is 0, it returns 1 (base case).
+
+Otherwise, it multiplies n with the factorial of n-1.
+
+
+Function 2: Fibonacci Number Calculation
+
+Description:
+
+This function calculates the nth Fibonacci number using recursion.
+
+function fibonacci(n: integer) -> integer
+    if n equals 0:
+        return 0
+    else if n equals 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+Explanation:
+
+The function takes an integer n as input and recursively calculates the nth Fibonacci number.
+If n is 0, it returns 0 (base case).
+If n is 1, it returns 1 (base case).
+Otherwise, it recursively calculates the sum of the (n-1)th and (n-2)th Fibonacci numbers.
+
+
+Modularity in Programming:
+
+1. Modularity in programming refers to the practice of breaking down a program into smaller, manageable, and reusable modules or functions. It helps with code reuse and organization in the following ways:
+
+2. Code Reusability: Modular functions can be reused in multiple parts of a program or even in different programs altogether. For example, the factorial and Fibonacci functions designed above can be reused whenever factorial or Fibonacci calculations are needed.
+
+3. Organizational Structure: By dividing the code into smaller modules, each responsible for a specific task, it becomes easier to understand, maintain, and debug the code. This leads to better organization and readability of the codebase.
+
+4. Ease of Testing: Modular functions can be tested individually, which simplifies the testing process. Unit tests can be written for each function to ensure that they work correctly in isolation, making it easier to identify and fix bugs.
+
+5. Scalability: As the program grows in complexity, modular design allows for easier scalability. New features can be added by simply creating new modules or extending existing ones, without having to rewrite the entire codebase.

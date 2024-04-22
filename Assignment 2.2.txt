@@ -1,0 +1,52 @@
+Recursive approach for Fibonacci number : 
+
+Fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return Fibonacci(n-1) + Fibonacci(n-2)
+
+Time Complexity: The time complexity of the recursive Fibonacci function is exponential, approximately O(2^n). 
+This is because each call to the function branches into two more calls, leading to a binary tree of recursive calls.
+
+Space Complexity: The space complexity is also exponential, O(n), because the function calls are stored 
+in the call stack until reaching the base case
+
+
+Iterative Approach for Fibonacci Number : 
+
+Fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        fib = [0, 1]
+        for i from 2 to n:
+            fib[i % 2] = fib[0] + fib[1]
+        return fib[n % 2]
+
+
+Time Complexity: The time complexity of the iterative Fibonacci function is linear, O(n).
+This is because it iterates through the loop exactly n times to calculate the nth Fibonacci number.
+
+Space Complexity: The space complexity of the iterative approach is constant, O(1), 
+because it only requires a fixed amount of memory to store the variables, regardless of the input size.
+
+
+Recursive Approach:
+
+Pros:
+More straightforward implementation, resembling the mathematical definition.
+
+Cons:
+Exponential time and space complexity make it inefficient for large inputs.
+May lead to stack overflow errors for large values of n.
+
+Iterative Approach:
+
+Pros:
+Linear time complexity makes it more efficient, especially for large inputs.
+No risk of stack overflow errors.
+
+Cons:
+Slightly more complex implementation compared to the recursive approach.
+May be less intuitive for some programmers
